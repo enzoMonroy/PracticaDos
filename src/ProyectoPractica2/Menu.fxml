@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProyectoPractica2.MenuController">
+   <children>
+      <MenuBar prefHeight="32.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Dispositivo">
+            <items>
+                  <MenuItem fx:id="btnGestionDispo" mnemonicParsing="false" onAction="#gestionDispo" text="Gestionar dispositivo" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Acciones">
+            <items>
+                  <MenuItem fx:id="btnAccionExterna" mnemonicParsing="false" onAction="#AccionExterna" text="Acciones Externas al Dispositivos" />
+                  <MenuItem fx:id="btnAccionDispo" mnemonicParsing="false" onAction="#AccionDispo" text="Acciones con Dispositivos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+               <items>
+                  <MenuItem fx:id="btnReporteArchivoAlmaDispo" mnemonicParsing="false" onAction="#reportArchAlmacenDispo" text="Reporte de archivos almacenados en dispositivos" />
+                  <MenuItem fx:id="btnBitacoraINgreProgra" mnemonicParsing="false" onAction="#bitacoraIngresoProgra" text="Bitácora de ingreso al programa" />
+                  <MenuItem fx:id="btnDispoAsociaUser" mnemonicParsing="false" onAction="#dispoAsociadoUser" text="Dispositivos asociados a cada usuario" />
+                  <MenuItem fx:id="btnBitacora" mnemonicParsing="false" onAction="#bitacora" text="Bitácora" />
+               </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Usuarios">
+               <items>
+                  <MenuItem fx:id="btnGestionarUser" mnemonicParsing="false" onAction="#gestionarUser" text="Gestionar usuario" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProyectoPractica2.LoginController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #000080;">
+         <children>
+            <Text layoutX="13.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIENVENIDO" wrappingWidth="273.09375">
+               <font>
+                  <Font size="48.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="300.0" prefHeight="500.0" prefWidth="400.0">
+         <children>
+            <TextField fx:id="txtUser" layoutX="126.0" layoutY="167.0" promptText="Usuario" />
+            <PasswordField fx:id="txtpassword" layoutX="126.0" layoutY="258.0" promptText="Contraseña" />
+            <Button layoutX="183.0" layoutY="345.0" mnemonicParsing="false" onAction="#actionLogin" text="Ingresar" />
+            <Text layoutX="81.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Iniciar Sesión" textAlignment="CENTER">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Usuario:" />
+            <Text layoutX="25.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña:" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
